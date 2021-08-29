@@ -1,0 +1,19 @@
+import 'dart:io';
+void main() {
+	var num = stdin.readLineSync();
+	List<int> numList = num.split(' ').map(int.parse).toList();
+	
+	var numA = numList[0];
+	var numB = numList[1];
+
+	
+	print("${divide(numA, numB)} ${remainder(numA, numB)}");	
+}
+
+int divide(int numA, int numB){
+	return numA ~/ numB;
+}
+	
+int remainder(int numA, int numB){
+	return numA % numB;
+}
